@@ -137,6 +137,13 @@ body {
 /* MY CSS-LESS CODE STARTS HERE */
 /*Variables*/
 /*Mixins*/
+.bordered {
+  border: 2px dotted black;
+  margin-bottom: 40px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
 .top-content-container {
   width: 880px;
   margin: 50px auto;
@@ -268,13 +275,16 @@ button:hover {
   border: 2px dotted black;
   margin-bottom: 40px;
   width: 70%;
-  margin-left: 164px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 @media (max-width: 500px) {
   .main-content {
     flex-direction: column;
     border: none;
     text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }
 h4 {
