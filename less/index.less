@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,3 +57,206 @@ html, body {
     height: 100%;
 }
 
+/* MY CSS-LESS CODE STARTS HERE */
+
+/*Variables*/
+@main-container-color: #e6e9ec;
+@main-container-border: 5px;
+@main-font:'Quicksand', sans-serif;
+@hover-color: red;
+@button-hover-color: black;
+
+/*Mixins*/
+.bordered(){
+	border: 2px dotted @button-hover-color;
+	margin-bottom: 40px;
+	
+}
+
+
+.top-content-container{
+	width: 880px;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	background-color: @main-container-color;
+	border-radius: @main-container-border;
+
+	@media(max-width: 500px) {
+		flex-direction: column;
+    align-items: center;
+
+  }
+}
+
+.top-content{
+	margin: 40px 40px 0px 40px;
+
+	@media(max-width: 500px) {
+		flex-direction: column;
+		text-align: center;
+		font-size: 40px;
+  }
+}
+
+.header-container{
+	width: 880px;
+	margin: 50px auto;
+	margin-bottom: -20px;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+
+	@media(max-width: 500px) {
+		flex-direction: column;
+    align-items: center;
+  }
+}
+
+nav{
+	margin-left: 539px;
+
+	@media(max-width: 500px) {
+		margin-left: 0;
+  }
+}
+
+a{
+	margin-left: 30px;
+	font-size: 1.0rem;
+	font-family: @main-font;
+	text-decoration: none;
+	color: black;
+	&:hover{
+		color: @hover-color;
+	}
+
+	@media(max-width: 500px) {
+		font-size: 2.8rem;
+		flex-direction: column;
+  }
+}
+
+img{
+	margin: 70px 0px 0px 40px;
+	width: 250px;
+
+	@media(max-width: 500px) {
+		width: 400px;
+  }
+}
+
+h1{
+	font-size: 3.5rem;
+	font-family: @main-font;
+}
+
+h3{
+	font-size: 2rem;
+	font-family: @main-font;
+	margin-top: 20px;
+	margin-bottom: 45px;
+
+	@media(max-width: 500px) {
+		font-size: 2.8rem;
+  }
+}
+
+
+p{
+	margin-top: 25px;
+	font-family: @main-font;
+}
+
+button{
+	background-color: gray;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+	margin: 20px 0px 90px 0px;
+  cursor: pointer;
+	border-radius: 4px;
+
+	&:hover{
+		background: @button-hover-color;
+	}
+
+	@media(max-width: 500px) {
+		padding: 25px;
+		font-size: 2rem;
+		margin-top: 45px;
+  }
+}
+
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+	width: 100%;
+	.bordered();
+}
+
+h4{
+	font-family: @main-font;
+	font-size: 1.5rem;
+
+	@media( max-width: 500px ) {
+		font-size: 3rem;
+		border-bottom: 1px solid black;
+		text-align: center;
+  }
+}
+
+.main-content section {
+	font-family: @main-font;
+  margin-top: 20px;
+	margin-left: 12.5%;
+	margin-bottom: 60px;
+  width: 30%;
+
+	@media( max-width: 500px ) {
+    width: 100%;
+		font-size: 2rem;
+		margin-left: 40%;
+
+  }
+}
+
+
+/*MEDIA QUERIES FOR 500PX*/
+
+@media( max-width: 500px ) {
+  .main-content {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+h6{
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
