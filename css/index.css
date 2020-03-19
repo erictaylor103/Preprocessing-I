@@ -147,7 +147,6 @@ body {
 }
 @media (max-width: 500px) {
   .top-content-container {
-    flex-direction: column;
     align-items: center;
   }
 }
@@ -158,7 +157,8 @@ body {
   .top-content {
     flex-direction: column;
     text-align: center;
-    font-size: 40px;
+    font-size: 1.5rem;
+    width: 45%;
   }
 }
 .header-container {
@@ -182,6 +182,7 @@ nav {
 @media (max-width: 500px) {
   nav {
     margin-left: 0;
+    width: 53%;
   }
 }
 a {
@@ -196,8 +197,10 @@ a:hover {
 }
 @media (max-width: 500px) {
   a {
-    font-size: 2.8rem;
+    justify-content: space-around;
+    font-size: 1.5rem;
     flex-direction: column;
+    align-items: center;
   }
 }
 img {
@@ -206,12 +209,20 @@ img {
 }
 @media (max-width: 500px) {
   img {
-    width: 400px;
+    width: 40%;
+    align-items: center;
+    margin: 0;
+    margin-top: 40px;
   }
 }
 h1 {
   font-size: 3.5rem;
   font-family: 'Quicksand', sans-serif;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 h3 {
   font-size: 2rem;
@@ -221,7 +232,7 @@ h3 {
 }
 @media (max-width: 500px) {
   h3 {
-    font-size: 2.8rem;
+    font-size: 1.5rem;
   }
 }
 p {
@@ -245,8 +256,8 @@ button:hover {
 }
 @media (max-width: 500px) {
   button {
-    padding: 25px;
-    font-size: 2rem;
+    padding: 20px;
+    font-size: 1.5rem;
     margin-top: 45px;
   }
 }
@@ -256,6 +267,15 @@ button:hover {
   width: 100%;
   border: 2px dotted black;
   margin-bottom: 40px;
+  width: 70%;
+  margin-left: 164px;
+}
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+    border: none;
+    text-align: center;
+  }
 }
 h4 {
   font-family: 'Quicksand', sans-serif;
@@ -263,8 +283,7 @@ h4 {
 }
 @media (max-width: 500px) {
   h4 {
-    font-size: 3rem;
-    border-bottom: 1px solid black;
+    font-size: 2rem;
     text-align: center;
   }
 }
@@ -277,14 +296,8 @@ h4 {
 }
 @media (max-width: 500px) {
   .main-content section {
-    width: 100%;
-    font-size: 2rem;
+    width: 80%;
+    font-size: 1.5rem;
     margin-left: 40%;
-  }
-}
-/*MEDIA QUERIES FOR 500PX*/
-@media (max-width: 500px) {
-  .main-content {
-    flex-direction: column;
   }
 }
